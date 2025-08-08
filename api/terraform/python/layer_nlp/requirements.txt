@@ -1,0 +1,23 @@
+# -----------------------------------------------------------------------------
+# written by: Lawrence McDaniel
+#             https://lawrencemcdaniel.com
+#
+# usage:      Shared Python requirements for AWS Lambda functions.
+#             Create a virtual environment in the root of this repository
+#             named `venv`. Terraform modules will look for and include these
+#             requirements in the zip package for this layer.
+# -----------------------------------------------------------------------------
+
+pyyaml==6.0.2
+
+# NLP requirements
+# --------------------------
+python-Levenshtein==0.27.1
+pyyaml
+
+# weather function
+# --------------------------
+googlemaps==4.10.0
+openmeteo-requests==1.6.0
+requests-cache==1.2.1
+retry-requests==2.0.0

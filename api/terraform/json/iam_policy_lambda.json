@@ -1,0 +1,36 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams",
+        "logs:PutLogEvents",
+        "logs:GetLogEvents",
+        "logs:FilterLogEvents"
+      ],
+      "Resource": ["arn:aws:lambda:*"]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "apigateway:GET",
+        "ec2:DescribeRegions",
+        "iam:ListPolicies",
+        "iam:ListRoles",
+        "iam:GetPolicy",
+        "iam:GetPolicyVersion",
+        "iam:ListAttachedRolePolicies",
+        "lambda:ListFunctions",
+        "route53:ListHostedZones",
+        "route53:ListResourceRecordSets",
+        "s3:ListAllMyBuckets",
+        "s3:*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
